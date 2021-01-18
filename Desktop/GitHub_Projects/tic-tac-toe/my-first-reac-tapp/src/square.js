@@ -1,18 +1,18 @@
 
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import React from 'react';
 
-export const Square = () => {
-    const [ value, setValue ] = useState(null);
+export const Square = (props) => {
     
     return (
-       <button className="square" onClick={() => setValue("X")}>
-          {value}
+       <button className="square" onClick={props.onClick}>
+          {props.value}
        </button>
-    )
+    );
 }
 
 Square.propTypes = {
 
-    value: PropTypes.number
+    value: PropTypes.string,
+    onClick: PropTypes.func
 }
