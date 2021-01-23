@@ -4,7 +4,7 @@ import { Square } from "./square";
 export const Board = () => {
     
     
-    const squareArray = [];
+    const squareArray = new Array(9).fill(null);
     const [squares, setSquares] = useState(squareArray);
     const [xIsNext, setxIsNext] = useState(true)
     let isXorO = xIsNext ? 'X' : 'O';
