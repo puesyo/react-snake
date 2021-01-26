@@ -1,6 +1,7 @@
 body {
-  font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 50px;
 }
 
 ol, ul {
@@ -40,11 +41,31 @@ ol, ul {
   background: #ddd;
 }
 
-.game {
+.container{
+  
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align: center;
 }
 
-.game-info {
-  margin-left: 20px;
+.game-board{
+ display: flex;
+ justify-content: center;
+}
+
+.button{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  padding: 1px 42px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: 'Palanquin', sans-serif;
+  font-size: 30px;
+  background-color: rgb(193, 217, 240);
+}
+
+.button:active {
+  background-color: rgb(172, 207, 240);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
